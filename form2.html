@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="avg(); return false" >
+        <h1>FIND PERCENTAGE</h1>
+<label for="tm">TOTAL MARKS</label><br><br>
+<input type="number" id="tm" placeholder="ENTER YOUR TOTAL MARKS"><br><br>
+<label for="om">OBTAINED MARKS</label><br><br>
+<input type="number" id="om" placeholder="ENTER YOUR OBTAINED MARKS"><br>
+<button type="submit">CALCULATE</button>
+
+
+    </form>
+<h1 id="res"></h1>
+
+    <script>
+function avg() {
+    let tm=document.querySelector("#tm").value 
+    let om=document.querySelector("#om").value
+    result=om*100/tm
+    
+   document.querySelector("#res") .innerHTML= "you have got it"+result
+    
+    
+}
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
